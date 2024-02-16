@@ -31,7 +31,7 @@ class Mail:
         try:
             self.mail.select("inbox")
 
-            # Search for the latest 10 emails in the mailbox
+            # Search for the latest 100 emails in the mailbox
             status, messages = self.mail.search(None, "ALL")
             messages = messages[0].split()
             messages.reverse()
@@ -159,3 +159,24 @@ class Mail:
 if __name__ == "_main_":
     app = Mail()
     app.mail_data()
+    
+    
+
+# try:
+#      if 'mail_category' is in app.mail_data():
+#          for items in range(1,101):
+#              print(items[:50])
+             
+# except:
+#      if 'list_category' in app:
+#         for items in my_files[0]:
+#             print(items)
+
+# finally:
+    #    for items in current_state_list!=0:
+    #        items = items.isnull()
+    #        items += current_state_list
+    #        print(items)
+    # the current state could be null avoiding and it will try
+    # for items in database.schema() == None:
+    #     pass
