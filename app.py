@@ -78,6 +78,7 @@ if selected == 'Description':
         st.markdown("- Machine Learning-powered Classification")
         st.markdown("- Real-time Threat Analysis")
         st.markdown("- User-friendly Dashboard")
+        
         st.header("Get Started:")
         st.write("1. Sign up for our service.")
         st.write("2. Configure your filtering preferences.")
